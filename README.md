@@ -23,15 +23,15 @@ See [Advanced configuration](#advanced-configuration) for details and more confi
     configuration commands to both `.bashrc` (for interactive shells)
     and the profile file that Bash would use (for login shells).
 
-    First, add the commands to `~/.bashrc` by running the following in your terminal:
+    * First, add the commands to `~/.bashrc` by running the following in your terminal:
 
-    ~~~ bash
-    echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bashrc
-    echo 'command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bashrc
-    echo 'eval "$(pyenv init -)"' >> ~/.bashrc
-    ~~~
+      ~~~ bash
+      echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bashrc
+      echo 'command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bashrc
+      echo 'eval "$(pyenv init -)"' >> ~/.bashrc
+      ~~~
 
-    Then, if you have `~/.profile`, `~/.bash_profile` or `~/.bash_login`, add the commands there as well.
+  - Then, if you have `~/.profile`, `~/.bash_profile` or `~/.bash_login`, add the commands there as well.
     If you have none of these, add them to `~/.profile`.
 
     * to add to `~/.profile`:
