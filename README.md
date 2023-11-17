@@ -1,4 +1,4 @@
-# pyenv-setup
+# linux-setup
 
 ### Set up your shell environment for Pyenv in ubuntu
 
