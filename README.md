@@ -1,6 +1,6 @@
-# linux-setup
+# My linux-setup 🚀
 
-### Set up your shell environment for Pyenv in ubuntu
+## Set up your shell environment for Pyenv in ubuntu
 
 * Download `install-pyenv.sh` file and move it to `$HOME`.
 * run following command from terminal with pwd as `$HOME`:
@@ -48,10 +48,52 @@ See [Advanced configuration](#advanced-configuration) for details and more confi
       echo 'eval "$(pyenv init -)"' >> ~/.bash_profile
       ~~~
 
-### Restart your shell
+## Restart your shell
 
   for the `PATH` changes to take effect.
 
   ```sh
   exec "$SHELL"
+  ```
+
+## Set up your python version
+- To check available python versions list you can run following command:
+  ```
+  pyenv install --list
+  ```
+- For example, if you want to install 3.12.0 version, you can type & run following command:
+  ```
+  pyenv install 3.12.0
+  ```
+- To see whether python version is successfully installed or not you can run following command:
+  ```
+  pyenv versions
+  ```
+
+## Set up your virtualenv
+- Now, you're good to create a virtual environment using pyenv.
+  * Replace `3.12.0` with `your installed python version`
+  * Replace `myenv` with `your desired virtualenv name` you want to create
+  ```
+  pyenv virtualenv 3.12.0 myenv
+  ```
+- To check whether `myenv` is ready to use or not you can run following command:
+  ```
+  pyenv virtualenvs
+  ```
+- To activate your virtual environment you can run following command:
+  * Replace `myenv` with `your virtualenv name` you want to activate
+  ```
+  pyenv activate myenv
+  ```
+- To deactivate your virtual environment you can run following command:
+  ```
+  pyenv deactivate
+  ```
+
+## Delete virtualenv
+- Now, if you want to delete your created virtual environment you can run following command:
+  * Replace `myenv` with `your virtualenv name` you want to delete
+  ```
+  pyenv virtualenv-delete myenv
   ```
