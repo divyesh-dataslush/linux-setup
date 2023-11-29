@@ -1,6 +1,22 @@
 # My linux-setup 🚀
 
-## Set up your shell environment for Pyenv in ubuntu
+## Set up chrome
+
+- To download chrome you can run following command in case if you haven't downloaded it manually from browser:
+  
+  ~~~
+  wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+  ~~~
+
+- To install chrome you can run following command:
+  
+  * Change your working directory to the directory where 'google-chrome-stable_current_amd64.deb' is downloaded.
+    
+    ~~~
+    sudo dpkg -i google-chrome-stable_current_amd64.deb	
+    ~~~
+
+## Set up your shell environment for pyenv in ubuntu
 
 * Download `install-pyenv.sh` file and move it to `$HOME`.
 * run following command from terminal with pwd as `$HOME`:
