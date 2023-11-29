@@ -57,43 +57,69 @@ See [Advanced configuration](#advanced-configuration) for details and more confi
   ```
 
 ## Set up your python version
+
 - To check available python versions list you can run following command:
+
   ```
   pyenv install --list
   ```
+  
 - For example, if you want to install 3.12.0 version, you can type & run following command:
+  
   ```
   pyenv install 3.12.0
   ```
+  
 - To see whether python version is successfully installed or not you can run following command:
-  ```
-  pyenv versions
-  ```
+
+  * If you see your installed python version, here `3.12.0`, after running below command you're good to go.
+    
+    ```
+    pyenv versions
+    ```
 
 ## Set up your virtualenv
+
 - Now, you're good to create a virtual environment using pyenv.
+  
   * Replace `3.12.0` with `your installed python version`
   * Replace `myenv` with `your desired virtualenv name` you want to create
-  ```
-  pyenv virtualenv 3.12.0 myenv
-  ```
+ 
+    ```
+    pyenv virtualenv 3.12.0 myenv
+    ```
+  
 - To check whether `myenv` is ready to use or not you can run following command:
-  ```
-  pyenv virtualenvs
-  ```
+  
+  * If you see `myenv` after running below command you're good to go.
+    
+    ```
+    pyenv virtualenvs
+    ```
+  
 - To activate your virtual environment you can run following command:
+
   * Replace `myenv` with `your virtualenv name` you want to activate
-  ```
-  pyenv activate myenv
-  ```
+    
+    ```
+    pyenv activate myenv
+    ```
+
+  * After successfully completion, you can see `(myenv)` in starting of the path.
+  * After that you're all set to install the python libraries.
+  
 - To deactivate your virtual environment you can run following command:
+  
   ```
   pyenv deactivate
   ```
 
 ## Delete virtualenv
+
 - Now, if you want to delete your created virtual environment you can run following command:
+  
   * Replace `myenv` with `your virtualenv name` you want to delete
-  ```
-  pyenv virtualenv-delete myenv
-  ```
+    
+    ```
+    pyenv virtualenv-delete myenv
+    ```
